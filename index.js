@@ -32,6 +32,11 @@ let persons = [
         "id": 5,
         "name": "vua",
         "number": "39-23-6423122"
+    },
+    {
+        "id": 5,
+        "name": "pawn",
+        "number": "39-23-6423122"
     }
 ]
 
