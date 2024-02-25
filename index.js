@@ -25,11 +25,11 @@ app.use(morgan('dev'))
 app.use(express.static('dist'))
 
 app.get('/version', (req, res) => {
-    res.send('2')
+    res.send('3')
 })
 
 app.get('/health', (req, res) => {
-    res.status(404).send('zero-time deployment')
+    res.send('I am ok')
 })
 
 app.get('/api/info', (request, response) => {
