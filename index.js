@@ -24,6 +24,14 @@ app.use(express.json())
 app.use(morgan('dev'))
 app.use(express.static('dist'))
 
+app.get('/version', (req, res) => {
+    res.send('2')
+})
+
+app.get('/health', (req, res) => {
+    res.send('ok')
+})
+
 app.get('/api/info', (request, response) => {
     Person
         .find({})
