@@ -15,8 +15,11 @@ jobs:
         with:
           node-version: 20
       
-      - name: Install dependencise
+      - name: Install backend dependencise
         run: npm install
+
+      - name: Install frontend dependencies
+        run: cd ./frontend && npm install
 
       - name: Lint
         run: npm run lint
