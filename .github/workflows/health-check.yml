@@ -1,0 +1,16 @@
+name: Periodic Health Check
+  
+on:
+  schedule:
+  - cron:  '5 * * * *'
+
+jobs:
+  periodic_health_check:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Check the deployed service URL
+        uses: jtalk/url-health-check-action@v1.2
+        with:
+          url: https://phonebook-ac1s.onrender.com/health
+          max-attempts: 3
+          retry-delay: 5s 
