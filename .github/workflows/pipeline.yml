@@ -36,7 +36,7 @@ jobs:
         if: ${{ success() && github.event_name == 'push' && !contains(join(github.event.commits.*.message, ' '), '#skip') }}
         with:
           severity: info
-          text: A new version of Pokedex deployed
+          text: A new version of Phonebook deployed
           description: to https://phonebook-ac1s.onrender.com by ${{ github.event.commits[0].committer.username }}
           webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
 
