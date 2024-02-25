@@ -25,7 +25,7 @@ app.use(morgan('dev'))
 app.use(express.static('dist'))
 
 app.get('/version', (req, res) => {
-    res.send('4')
+    res.send('5')
 })
 
 app.get('/health', (req, res) => {
