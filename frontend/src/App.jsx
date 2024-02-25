@@ -1,8 +1,5 @@
 import { useState, useEffect } from 'react'
 
-// Third-party libaries
-import axios from 'axios'
-
 // Local imports 
 import Notificaion from './components/Notification'
 import personService from './services/persons'
